@@ -77,10 +77,10 @@ public class GerenciadorVeiculos {
             System.out.println("4. Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
-            scanner.nextLine(); // Limpar buffer
+            scanner.nextLine(); 
 
             switch (opcao) {
-                case 1: // Adicionar Carro
+                case 1: 
                     System.out.print("Digite a placa: ");
                     String placaCarro = scanner.nextLine();
                     System.out.print("Digite o ano: ");
@@ -91,7 +91,7 @@ public class GerenciadorVeiculos {
                     System.out.println("Carro adicionado com sucesso!");
                     break;
 
-                case 2: // Adicionar Moto
+                case 2: 
                     System.out.print("Digite a placa: ");
                     String placaMoto = scanner.nextLine();
                     System.out.print("Digite o ano: ");
@@ -102,7 +102,7 @@ public class GerenciadorVeiculos {
                     System.out.println("Moto adicionada com sucesso!");
                     break;
 
-                case 3: // Listar Veículos
+                case 3: 
                     if (frota.isEmpty()) {
                         System.out.println("Nenhum veículo cadastrado.");
                     } else {
@@ -117,7 +117,7 @@ public class GerenciadorVeiculos {
                     }
                     break;
 
-                case 4: // Sair
+                case 4:
                     System.out.println("Encerrando o programa.");
                     break;
 
